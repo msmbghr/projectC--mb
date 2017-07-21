@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79879574-8A8A-476F-9FBD-0820CB27DF06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cheque_Factory</RootNamespace>
+    <AssemblyName>cheque Factory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnalogClock">
+      <HintPath>..\..\..\..\..\Desktop\yacc_demo\AnalogClock.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RulerControl">
+      <HintPath>G:\dll not find\RulerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classMiladiToShamsi.cs" />
+    <Compile Include="connectiondb.cs" />
+    <Compile Include="frmbankaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbankaccount.Designer.cs">
+      <DependentUpon>frmbankaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmanageaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmanageaccount.Designer.cs">
+      <DependentUpon>frmmanageaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmanagepattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmanagepattern.Designer.cs">
+      <DependentUpon>frmmanagepattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpaterncheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpaterncheque.Designer.cs">
+      <DependentUpon>frmpaterncheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passdate.cs" />
+    <Compile Include="passinfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wizrard\frmfirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizrard\frmfirst.Designer.cs">
+      <DependentUpon>frmfirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizrard\frmmanagepattern1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizrard\frmmanagepattern1.Designer.cs">
+      <DependentUpon>frmmanagepattern1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizrard\frmstep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizrard\frmstep2.Designer.cs">
+      <DependentUpon>frmstep2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizrard\frmstep3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizrard\frmstep3.Designer.cs">
+      <DependentUpon>frmstep3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wizrard\frmstep4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wizrard\frmstep4.Designer.cs">
+      <DependentUpon>frmstep4.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmbankaccount.resx">
+      <DependentUpon>frmbankaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmanageaccount.resx">
+      <DependentUpon>frmmanageaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmanagepattern.resx">
+      <DependentUpon>frmmanagepattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpaterncheque.resx">
+      <DependentUpon>frmpaterncheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizrard\frmfirst.resx">
+      <DependentUpon>frmfirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizrard\frmmanagepattern1.resx">
+      <DependentUpon>frmmanagepattern1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizrard\frmstep2.resx">
+      <DependentUpon>frmstep2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizrard\frmstep3.resx">
+      <DependentUpon>frmstep3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wizrard\frmstep4.resx">
+      <DependentUpon>frmstep4.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new seach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_Ansar_p.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
